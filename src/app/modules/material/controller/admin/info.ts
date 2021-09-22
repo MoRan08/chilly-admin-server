@@ -1,12 +1,13 @@
 import { Provide } from '@midwayjs/decorator';
 import { CoolController, BaseController } from 'midwayjs-cool-core';
-import { MaterialCategoryEntity } from '../../entity/category';
+import { MaterialInfoEntity } from '../../entity/info';
+
 /**
- * 分类
+ * 素材详情
  */
 @Provide()
 @CoolController({
   api: ['add', 'delete', 'update', 'info', 'list', 'page'],
-  entity: MaterialCategoryEntity,
+  entity: MaterialInfoEntity,
 })
-export class aterialCategoryController extends BaseController {}
+export class MaterialInfoController extends BaseController {}
