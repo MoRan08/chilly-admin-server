@@ -21,7 +21,7 @@ export class MaterialCategoryEntity extends BaseEntity {
   @Column({ comment: '排序', nullable: true, default: 0 })
   sort: string;
 
-  @Column({ comment: '该类别下素材数量', nullable: true })
+  @Column({ comment: '该类别下素材数量', nullable: true,default: 0 })
   article_count: string;
 
   @Column({ comment: '尺寸参数', nullable: true })
